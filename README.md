@@ -167,11 +167,31 @@ This package is published under [MIT License](LICENSE)
 
 ## Contributing
 
-Contributions are welcome! Feel free to:
+Contributions are welcome! We appreciate your help in making `libgn` better.
 
-1. Open an issue to report a bug or suggest an improvement
-2. Create a pull request to contribute to the code
-3. Improve the documentation
+### How to Contribute
+
+1. **Report Bugs**: Use our [bug report template](.github/ISSUE_TEMPLATE/bug_report.md)
+2. **Suggest Features**: Use our [feature request template](.github/ISSUE_TEMPLATE/feature_request.md)
+3. **Submit Code**: Follow our [contributing guidelines](CONTRIBUTING.md)
+4. **Improve Documentation**: Help us make the docs better
+
+### Before Contributing
+
+- Read our [Code of Conduct](CODE_OF_CONDUCT.md)
+- Check existing issues to avoid duplicates
+- For data accuracy issues, please provide reliable sources
+- Ensure your code follows our style guidelines
+
+## Data Accuracy
+
+This library strives to provide accurate geographical and administrative data about Guinea. If you find any inaccuracies:
+
+- **Report data issues**: Use our [bug report template](.github/ISSUE_TEMPLATE/bug_report.md)
+- **Provide sources**: Include links to official government websites or reliable geographical databases
+- **Cross-reference**: We verify data from multiple sources before making changes
+
+We take data accuracy seriously as this library serves as a reference for Guinea's administrative structure.
 
 ## Support
 

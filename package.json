@@ -1,7 +1,7 @@
 {
 	"name": "libgn",
 	"version": "0.0.0",
-	"description": "All the data on Guinea",
+	"description": "Manipulate geographical and administrative data about Guinea.",
 	"license": "MIT",
 	"author": {
 		"name": "Lucien Loua",
@@ -22,17 +22,21 @@
 	],
 	"scripts": {
 		"build": "tsup",
+		"changeset": "changeset",
 		"dev": "tsup --watch",
-		"prepublishOnly": "pnpm build",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write --unsafe .",
+		"release": "pnpm build && pnpm lint && pnpm test:run && changeset publish",
 		"test": "vitest",
 		"test:coverage": "vitest run --coverage",
 		"test:run": "vitest run",
-		"lint": "biome check .",
-		"lint:fix": "biome check --write --unsafe ."
+		"version-packages": "changeset version"
 	},
+	"sideEffects": false,
 	"types": "dist/index.d.ts",
 	"devDependencies": {
-		"@biomejs/biome": "2.1.2",
+		"@biomejs/biome": "^2.1.2",
+		"@changesets/cli": "^2.29.5",
 		"@types/node": "^22",
 		"@vitest/coverage-v8": "^3.2.4",
 		"tsup": "^8.5.0",
@@ -43,7 +47,14 @@
 		"data",
 		"guinea",
 		"guinée",
-		"typescript",
-		"javascript"
-	]
+		"javascript",
+		"typescript"
+	],
+	"engines": {
+		"node": ">=20||>=22"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"packageManager": "pnpm@10.13.0"
 }
