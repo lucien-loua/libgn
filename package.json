@@ -1,0 +1,49 @@
+{
+	"name": "libgn",
+	"version": "0.0.0",
+	"description": "All the data on Guinea",
+	"license": "MIT",
+	"author": {
+		"name": "Lucien Loua",
+		"url": "https://github.com/lucien-loua"
+	},
+	"homepage": "https://github.com/lucien-loua/libgn#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lucien-loua/libgn.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lucien-loua/libgn/issues"
+	},
+	"type": "module",
+	"main": "dist/index.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"prepublishOnly": "pnpm build",
+		"test": "vitest",
+		"test:coverage": "vitest run --coverage",
+		"test:run": "vitest run",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write --unsafe ."
+	},
+	"types": "dist/index.d.ts",
+	"devDependencies": {
+		"@biomejs/biome": "2.1.2",
+		"@types/node": "^22",
+		"@vitest/coverage-v8": "^3.2.4",
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3",
+		"vitest": "^3.2.4"
+	},
+	"keywords": [
+		"data",
+		"guinea",
+		"guinée",
+		"typescript",
+		"javascript"
+	]
+}
