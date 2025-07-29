@@ -3,7 +3,7 @@
 	"globalEnv": ["NODE_ENV", "CI"],
 	"tasks": {
 		"build": {
-			"dependsOn": ["^build"],
+			"dependsOn": ["^build", "^build:pkg"],
 			"inputs": ["$TURBO_DEFAULT$", ".env*"],
 			"outputs": ["dist/**"]
 		},
