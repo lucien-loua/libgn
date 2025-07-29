@@ -31,15 +31,15 @@ const bannerText = `/**
  */`;
 
 export default defineConfig({
-  clean: true,
-  entry: ["src/index.ts"],
-  minify: true,
-  format: ["esm"],
-  sourcemap: true,
-  dts: {
-    banner: bannerText,
-  },
-  banner: {
-    js: bannerText,
-  },
+	clean: true,
+	entry: ["src/index.ts"],
+	minify: true,
+	format: ["esm"],
+	sourcemap: true,
+	dts: {
+		banner: bannerText,
+	},
+	banner: {
+		js: bannerText,
+	},
 });
