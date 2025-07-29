@@ -1,5 +1,11 @@
 # libgn
 
+## 0.0.2
+
+### Patch Changes
+
+- a874541: - Update package metadata and homepage URLs.
+
 ## 0.0.1
 
 ### Patch Changes
