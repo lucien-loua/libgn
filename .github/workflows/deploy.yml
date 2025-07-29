@@ -50,8 +50,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build playground
-        run: pnpm build --filter playground
+      - name: Build playground with dependencies
+        run: pnpm turbo build --filter playground
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
