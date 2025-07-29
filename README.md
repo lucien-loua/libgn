@@ -1,6 +1,11 @@
-# `libgn` 🇬🇳
+# `libgn`
 
 **`libgn`** is a TypeScript/JavaScript library that makes it easy to access and manipulate geographical and administrative data about Guinea.
+
+![GN](https://github.com/user-attachments/assets/9555a634-c4b1-4951-8d48-2e43fa0ec127)
+![GitHub License](https://img.shields.io/github/license/lucien-loua/libgn)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/lucien-loua/libgn/test.yml?logo=github&label=Tests)
+![NPM Version](https://img.shields.io/npm/v/libgn?logo=npm)
 
 ## Installation
 
@@ -196,7 +201,3 @@ We take data accuracy seriously as this library serves as a reference for Guinea
 ## Support
 
 If you have questions or need help, don't hesitate to open an issue on GitHub.
-
----
-
-**Made with ❤️ for Guinea 🇬🇳**
