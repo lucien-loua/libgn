@@ -27,19 +27,19 @@ const bannerText = `/**
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * Documentation : ${pkg.homepage}
+ * @see : ${pkg.homepage}
  */`;
 
 export default defineConfig({
-	clean: true,
-	entry: ["src/index.ts"],
-	minify: true,
-	format: ["esm"],
-	sourcemap: true,
-	dts: {
-		banner: bannerText,
-	},
-	banner: {
-		js: bannerText,
-	},
+  clean: true,
+  entry: ["src/index.ts"],
+  minify: true,
+  format: ["esm"],
+  treeshake: true,
+  dts: {
+    banner: bannerText,
+  },
+  banner: {
+    js: bannerText,
+  },
 });

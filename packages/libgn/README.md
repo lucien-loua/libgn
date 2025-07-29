@@ -165,7 +165,7 @@ pnpm lint:fix
 
 ## License
 
-This package is published under [MIT License](LICENSE)
+This package is published under [MIT License](../../LICENSE)
 
 ## Support
 

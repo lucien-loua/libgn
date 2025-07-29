@@ -1,25 +1,11 @@
 {
 	"name": "libgn",
 	"private": true,
-	"description": "Manipulate geographical and administrative data about Guinea.",
 	"license": "MIT",
 	"author": {
 		"name": "Lucien Loua",
 		"url": "https://github.com/lucien-loua"
 	},
-	"homepage": "https://github.com/lucien-loua/libgn#readme",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/lucien-loua/libgn.git"
-	},
-	"bugs": {
-		"url": "https://github.com/lucien-loua/libgn/issues"
-	},
-	"type": "module",
-	"main": "dist/index.js",
-	"files": [
-		"dist"
-	],
 	"scripts": {
 		"build": "turbo build",
 		"build:pkg": "turbo build:pkg",
@@ -42,9 +28,6 @@
 	},
 	"engines": {
 		"node": ">=20||>=22"
-	},
-	"publishConfig": {
-		"access": "public"
 	},
 	"packageManager": "pnpm@10.13.0"
 }
