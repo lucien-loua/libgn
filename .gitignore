@@ -1,33 +1,41 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # Dependencies
-node_modules/
+node_modules
+.pnp
+.pnp.js
 
-# Production build
-dist/
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Coverage reports
-coverage/
+# Testing
+coverage
 
-# Log files
-*.log
+# Turbo
+.turbo
+
+# Vercel
+.vercel
+
+# Build Outputs
+.next/
+out/
+build
+dist
+
+
+# Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS generated files
+# Misc
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Temporary files
-.tmp/
-.temp/
+*.pem
+*storybook.log
+storybook-static
+test-results
