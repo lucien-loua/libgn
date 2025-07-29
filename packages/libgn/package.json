@@ -1,6 +1,6 @@
 {
 	"name": "libgn",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Manipulate geographical and administrative data about Guinea.",
 	"license": "MIT",
 	"author": {
